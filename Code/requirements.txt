@@ -1,0 +1,5 @@
+openai>=1.0.0
+langgraph
+fastmcp
+requests
+python-dotenv
