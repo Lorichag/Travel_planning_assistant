@@ -7,7 +7,7 @@ This project implements a multi-agent system for travel planning.
 ## 🧠 Architecture
 
 * LangGraph: orchestration
-* CrewAI: agents
+* OpenAi_SDK: agents
 * FastMCP: external data integration
 
 ## 🤖 Agents
