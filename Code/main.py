@@ -3,7 +3,8 @@ from graph.workflow import graph
 user_input = input("Enter your travel request: ")
 
 result = graph.invoke({
-    "input": user_input
+    "input": user_input,
+    "history": []
 })
 
 print("\n=== FINAL RESULT ===")

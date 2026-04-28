@@ -3,3 +3,4 @@ langgraph
 fastmcp
 requests
 python-dotenv
+sendgrid
