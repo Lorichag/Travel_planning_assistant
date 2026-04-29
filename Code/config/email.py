@@ -8,7 +8,7 @@ load_dotenv()
 def send_email(to_email, subject, content):
 
     message = Mail(
-        from_email='your_email@example.com',  # ⚠️ email vérifié sur SendGrid
+        from_email='hagardloric@gmail.com',  # ⚠️ email vérifié sur SendGrid
         to_emails=to_email,
         subject=subject,
         html_content=content

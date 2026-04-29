@@ -10,16 +10,19 @@ from config.email import format_travel_email
 def research_node(state):
     result = run_research(state["input"],state.get("history", []))
     print("RESEARCH:", result)
+    print("\n=== END OF RESEARCH ===\n")
     return {**state,"research": result}
 
 def itinerary_node(state):
     result = run_itinerary(state["research"])
     print("ITINERARY:", result)
+    print("\n=== END OF ITINERARY ===\n")
     return {**state,"itinerary": result}
 
 def budget_node(state):
     result = run_budget(state["itinerary"])
     print("BUDGET:", result)
+    print("\n=== END OF BUDGET ===\n")
     return {**state,"budget": result}
 
 def verify_node(state):
