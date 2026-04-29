@@ -49,3 +49,5 @@ In the fird terminal:
 pip install -r requirements.txt
 python main.py
 ```
+## Link for the video:
+https://youtu.be/yiYr6DJ8uY0
