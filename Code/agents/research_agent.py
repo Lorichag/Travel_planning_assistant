@@ -74,7 +74,21 @@ def run_research(user_input,history):
         # 🧠 CAS 1 : le modèle veut appeler un tool
         if message.tool_calls:
 
-            messages.append(message)
+            messages.append({
+                "role": "assistant",
+                "content": message.content,
+                "tool_calls": [
+                    {
+                        "id": tc.id,
+                        "type": "function",
+                        "function": {
+                            "name": tc.function.name,
+                            "arguments": tc.function.arguments
+                        }
+                    }
+                    for tc in message.tool_calls
+                ]
+            })
 
             for tool_call in message.tool_calls:
                 function_name = tool_call.function.name
